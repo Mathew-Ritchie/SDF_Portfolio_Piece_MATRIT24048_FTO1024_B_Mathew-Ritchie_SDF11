@@ -51,6 +51,7 @@
             src="/assets/component-1/navigation/cache-bank-logo.png"
           />
         </div>
+        <!-- Nav bar and buttons for large screens, hidden in mobile version-->
         <div
           class="hidden md:flex items-center justify-between text-black gap-12"
         >
@@ -116,6 +117,7 @@
             </defs>
           </svg>
         </button>
+        <!-- Toggle nav bar for mobile -->
         <div
           class="absolute hidden md:hidden flex md:flex flex-col items-start justify-center w-full gap-3 overflow-hidden bg-white max-h-screen top-full px-4 py-8 shadow-main"
           id="mobile-menu"
@@ -157,7 +159,7 @@
 
     <!--Component 2 -->
     <!--Hero section-->
-    <section
+    <div
       class="container grid w-full grid-cols-1 my-auto mt-12 mb-8 md:grid-cols-2 xl:gap-14 md:gap-5"
       id="product"
     >
@@ -177,12 +179,12 @@
         </p>
         <div class="flex flex-col items-center gap-4 lg:flex-row">
           <button
-            class="flex items-center py-4 text-sm font-bold text-white px-7 focus:ring-4 focus:ring-purple-blue-100 transition duration-300 rounded-xl bg-green-500 hover:bg-pink-500"
+            class="max-sm:w-56 max-sm:justify-center flex items-center py-4 text-sm font-bold text-white px-7 focus:ring-4 focus:ring-purple-blue-100 transition duration-300 rounded-xl bg-green-500 hover:bg-pink-500"
           >
             Join Cache Now
           </button>
           <button
-            class="flex items-center py-4 text-sm font-bold text-white px-7 focus:ring-4 focus:ring-purple-blue-100 transition duration-300 rounded-xl bg-green-500 hover:bg-pink-500"
+            class="max-sm:w-56 max-sm:justify-center flex items-center py-4 text-sm font-bold text-white px-7 focus:ring-4 focus:ring-purple-blue-100 transition duration-300 rounded-xl bg-green-500 hover:bg-pink-500"
           >
             Join Our Discord Server
           </button>
@@ -190,12 +192,12 @@
       </div>
       <div class="items-center justify-end hidden col-span-1 md:flex">
         <img
-          class="w-4/5 rounded-md"
+          class="rounded-md"
           src="/assets/component-2/hero-image.png"
           alt="colourful cartoon of a lady sitting at a computer with dollar signs above and on the screen"
         />
       </div>
-    </section>
+    </div>
     <!-- Endorsement section -->
     <section class="w-full">
       <div
