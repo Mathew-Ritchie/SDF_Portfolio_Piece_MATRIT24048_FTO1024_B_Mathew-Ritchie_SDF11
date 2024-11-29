@@ -43,16 +43,14 @@
     <!--Component 1 -->
     <div class="fixed w-full top-0 mx-auto bg-white">
       <!-- Main container with navigation and header content -->
-      <div
-        class="relative flex flex-wrap items-center justify-between w-full shrink-0"
-      >
+      <div class="relative flex items-center justify-between w-full shrink-0">
         <div class="px-4">
           <img
             class="h-8"
             src="/assets/component-1/navigation/cache-bank-logo.png"
           />
         </div>
-        <!-- Nav bar and buttons for large screens, hidden in mobile version-->
+        <!-- large screen nav bar and buttons, hidden in mobile version-->
         <div
           class="hidden md:flex items-center justify-between text-black gap-12"
         >
@@ -118,9 +116,9 @@
             </defs>
           </svg>
         </button>
-        <!-- Toggle nav bar for mobile -->
+        <!-- Toggle nav bar for mobile, hidden for large screens -->
         <div
-          class="absolute hidden md:hidden flex md:flex flex-col items-start justify-center w-full gap-3 overflow-hidden bg-white max-h-screen top-full px-4 py-8 shadow-main"
+          class="absolute hidden flex flex-col items-start justify-center w-full gap-3 overflow-hidden bg-white max-h-screen top-full px-4 py-8 shadow-main"
           id="mobile-menu"
         >
           <a
@@ -199,7 +197,7 @@
       </div>
     </div>
     <!-- Endorsement section -->
-    <section class="w-full">
+    <div class="w-full">
       <div
         class="container flex flex-col items-center gap-0 mx-auto mt-10 mb-0"
       >
@@ -285,7 +283,7 @@
           </span>
         </div>
       </div>
-    </section>
+    </div>
 
     <!--Component 3 -->
     <!--features -->
@@ -293,7 +291,7 @@
       class="container mx-auto py-10 flex flex-col items-center justify-center"
       id="features"
     >
-      <!--Header-->
+      <!--Heading-->
       <div class="flex flex-col items-center justify-center mt-12">
         <h1
           class="mb-4 font-extrabold text-3xl lg:text-4xl text-dark-grey-900 text-center"
@@ -911,6 +909,7 @@
         </div>
       </div>
     </footer>
+    <!--TOGGLE BUTTON AND BAR JS -->
     <script>
       const mobileMenuToggle = document.getElementById("mobile-menu-toggle");
       const mobileMenu = document.getElementById("mobile-menu");
